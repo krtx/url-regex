@@ -1,5 +1,5 @@
 import test from 'ava';
-import m from './';
+import m from '.';
 
 test('match exact URLs', t => {
 	const fixtures = [
@@ -10,7 +10,6 @@ test('match exact URLs', t => {
 		'http://www.example.com/wpstyle/?p=364',
 		'https://www.example.com/foo/?bar=baz&inga=42&quux',
 		'http://a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z.com',
-		'http://mw1.google.com/mw-earth-vectordb/kml-samples/gp/seattle/gigapxl/$[level]/r$[y]_c$[x].jpg',
 		'http://user:pass@example.com:123/one/two.three?q1=a1&q2=a2#body',
 		'http://www.microsoft.xn--comindex-g03d.html.irongeek.com',
 		'http://✪df.ws/123',
@@ -142,7 +141,6 @@ test('match using list of TLDs', t => {
 		'www.example.com/wpstyle/?p=364',
 		'www.example.com/foo/?bar=baz&inga=42&quux',
 		'a.b.c.d.e.f.g.h.i.j.k.l.m.n.o.p.q.r.s.t.u.v.w.x.y.z.com',
-		'mw1.google.com/mw-earth-vectordb/kml-samples/gp/seattle/gigapxl/$[level]/r$[y]_c$[x].jpg',
 		'user:pass@example.com:123/one/two.three?q1=a1&q2=a2#body',
 		'www.microsoft.xn--comindex-g03d.html.irongeek.com',
 		'✪df.ws/123',
